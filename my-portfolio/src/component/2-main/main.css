@@ -1,0 +1,233 @@
+
+
+#skills-container{
+  
+  display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   
+}
+
+.c-one{
+
+
+opacity: 0;
+  transform: translateY(50px); /* slide from below */
+ 
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  
+
+
+
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+     grid-template-rows: 2fr 1fr; 
+    align-items: center;
+    background-color: rgba(11, 12, 11, 0.938);
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+    border-radius: 15px;
+
+    
+}
+
+
+.c-one.show {
+  opacity: 1;
+  transform: translateY(0); /* slide to natural position */
+}
+
+
+
+
+
+
+
+.c-one:hover{
+  transform: scale(1.1);
+    background-color: rgb(8, 8, 8);
+    
+}
+.c-one img {
+    width: 80%;
+    height: 100%;
+    align-self: center;
+    justify-self: center;
+    object-fit: cover;
+    margin: 0;
+    padding: 10PX;
+    position: relative;
+    
+}
+
+
+
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 60%;
+  width: 60%;
+  gap: 20px;
+  padding: 20px;
+  background: linear-gradient(45deg, #161e3d, #4149b4);
+  border-radius: 40px;
+  position: relative;
+ 
+ 
+    
+}
+
+
+@property --angle {
+            syntax: '<angle>';
+            inherits: true;
+            initial-value: 0deg;
+        }
+.skills::before {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            padding: 4px;
+            background: conic-gradient(
+                from var(--angle),
+                #b81cb873,
+                #c70e0e,
+                #b98dd3,
+                #f8f8f8,
+                #446d20,
+                #e9ad07
+            );
+            border-radius: 44px;
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask-composite: xor;
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            z-index: -1;
+            animation: rotateBorder 3s linear infinite;
+        }
+
+        .skills::after {
+            content: '';
+            position: absolute;
+            inset: -8px;
+            background: conic-gradient(
+                from var(--angle),
+                #1d1b1c,
+                #070707,
+                #18191a,
+                #1c1d1c,
+                #181817,
+                #2b0515
+            );
+            border-radius: 48px;
+            filter: blur(15px);
+            opacity: 0.7;
+            z-index: -2;
+            animation: rotateBorder 3s linear infinite;
+        }
+
+        @keyframes rotateBorder {
+            to {
+                --angle: 360deg;
+            }
+        }
+
+
+
+
+
+
+.text{
+    align-self: center;
+    justify-self: center;
+    color: #cac6c6;
+    margin: 0px;
+    font-size: 1.5rem;
+}
+
+/* Add to your main.css or a global CSS file */
+
+/* Mobile (≤ 480px) */
+@media (max-width: 480px) {
+ 
+  #skills-container{
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  .text {
+    font-size: 0.5rem;
+  }
+  
+
+  .skills {
+     height: 40%;
+    width: 80%;
+    gap: 10px;
+    
+  }
+.c-one{
+    height: 70px;
+    width: 70px;
+  }
+
+}
+
+/* Tablets (481px – 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  
+
+  .text {
+    font-size: 1rem;
+  }
+  
+
+  .skills {
+     height: 45%;
+    width: 80%;
+    gap: 10px;
+   
+    
+  }
+.c-one{
+    height: 100px;
+    width: 100px;
+  }
+
+  
+}
+
+@media (min-width: 769px) and (max-width: 884px) {
+
+  
+  
+.skills {
+     height: 60%;
+    width: 80%;
+    gap: 10px;
+}
+
+  .c-one{
+    height: 30%;
+    width: 30%;
+  }
+
+}
+
+@media (min-width: 2020px) and (max-width: 2431px) {
+  .skills {
+     height: 50%;
+    width: 50%;
+    gap: 10px;
+}
+
+
+}
+
+

@@ -1,0 +1,232 @@
+.contact{
+
+/* scroll animation */
+opacity: 0;
+  transition: opacity 1.8s ease-out;
+
+    background-color: rgb(3, 3, 3);
+    display: grid;
+    width: 310px;
+    height: 100px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr  2fr;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    overflow: hidden;
+    margin-bottom: 0px;
+     opacity: 0.6;
+     
+}
+
+.contact.show {
+  /* scroll animation */
+ 
+ opacity: 1;
+    /* slide to natural position */
+}
+
+#contact-container{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ height: 100vh;
+ 
+ 
+}
+.contact-Icon{
+     justify-self: center;
+     width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg, #b2b7ce, #4149b4);
+     display: flex;
+      align-items: center;
+     justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+}
+.contact-title{
+    display: flex;
+    justify-content: center;
+     font-size: 1rem;
+     
+}
+.link{
+    display: flex;
+    justify-content: center;
+     
+    
+    a{
+        color: #b9babe;
+         text-decoration: none;
+    }
+}
+.link:hover a{
+    color: #e0d3d3;
+    transform: scale(0.8);
+}
+.contacts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+    
+    border-radius: 40px;
+    width: 50%;
+    gap: 30px;
+    justify-content: center;
+    padding: 5px;
+    background-color: #e1e3e7;
+    padding: 20px;
+    margin-bottom: 10px;
+    padding: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 50vh;
+    position: relative;
+    
+  
+}
+
+
+@property --angle {
+            syntax: '<angle>';
+            inherits: true;
+            initial-value: 0deg;
+        }
+.contacts::before {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            padding: 4px;
+            background: conic-gradient(
+                from var(--angle),
+                #11101173,
+                #1f160d,
+                #34064e,
+                #251d14,
+                #161d10,
+                #000000
+            );
+            border-radius: 44px;
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask-composite: xor;
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            z-index: -1;
+            animation: rotateBorder 3s linear infinite;
+        }
+
+        .contacts::after {
+            content: '';
+            position: absolute;
+            inset: -8px;
+            background: conic-gradient(
+                from var(--angle),
+                #1d1b1c,
+                #070707,
+                #18191a,
+                #1c1d1c,
+                #181817,
+                #2b0515
+            );
+            border-radius: 48px;
+            filter: blur(15px);
+            opacity: 0.7;
+            z-index: -2;
+            animation: rotateBorder 3s linear infinite;
+        }
+
+        @keyframes rotateBorder {
+            to {
+                --angle: 360deg;
+            }
+        }
+
+
+
+.contact:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+
+@media (max-width: 320px) {
+    #contact-container{
+        margin-top: 650px;
+    }
+     .contact{
+    height: 25%;
+    width: 39%;
+    
+   }
+   .contacts{
+    height: 50%;
+    width: 100%;
+    
+   }
+
+}
+/* Tablets (481px – 768px) */
+@media (min-width: 321px) and (max-width: 768px) {
+  
+#contact-container{
+        margin-top: 650px;
+
+    }
+    .contact{
+    height: 28%;
+    width: 42%;
+    
+   }
+   .contacts{
+    height: 60%;
+    width: 90%;
+    
+   }
+  
+}
+
+
+
+@media (min-width: 1090px) and (max-width: 1501px) {
+  
+    #contact-container{
+        margin-top: 300px;
+
+    }
+   
+   .contacts{
+    height: 60%;
+    width: 50%;
+    
+   }
+   .contact{
+    height: 15%;
+    width: 30%;
+    
+   }
+}
+
+@media (min-width: 769px) and (max-width: 1089px) {
+  
+    #contact-container{
+        margin-top: 650px;
+
+    }
+   
+   .contacts{
+    height: 60%;
+    width: 50%;
+    
+   }
+   .contact{
+    height: 20%;
+    width: 30%;
+    
+   }
+}
+
+
+

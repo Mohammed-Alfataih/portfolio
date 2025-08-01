@@ -1,0 +1,67 @@
+html {
+  scroll-padding-top: 50px; /* or however tall your sticky nav is */
+  scroll-behavior: smooth;  /* Optional: enables smooth scrolling */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(90deg, #f0eeee, #faf8f8); 
+           
+            min-height: 100vh;
+            overflow-x: hidden;
+             /* Adjust based on your header height */
+           
+}
+#topic-skills{
+display: flex;
+justify-content: center;
+font-size: 2.5rem;
+margin-bottom: 100px;
+color: black;
+}
+#topic-project{
+display: flex;
+justify-content: center;
+font-size: 2.5rem;
+margin-bottom: 100px;
+color: black;
+}
+#topic-contact{
+display: flex;
+justify-content: center;
+font-size: 2.5rem;
+margin-bottom: 100px;
+color: black;
+
+}  
+#topic-certificates{
+ display: flex;
+justify-content: center;
+font-size: 2.5rem;
+margin-bottom: 100px;
+color: black;
+ 
+}
+/*@keyframes appear{
+    from{
+        
+        scale: 0.9;
+    }
+    to{
+        scale: 1;
+    }
+}
+@keyframes text{
+    from{
+        transform: translateX(-100%);
+
+        scale: 0.1;
+    }
+    to{
+        transform: translateX(100%);
+        scale: 1;
+    }
+}*/
+
