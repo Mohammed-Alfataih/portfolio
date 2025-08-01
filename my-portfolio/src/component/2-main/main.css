@@ -154,6 +154,13 @@ opacity: 0;
 /* Add to your main.css or a global CSS file */
 
 /* Mobile (≤ 480px) */
+@media (max-width: 376px) {
+#skills-container{
+    margin-left: 0px;
+    margin-bottom: 100px;
+    margin-top: 0px;
+  }
+}
 @media (max-width: 480px) {
  
   #skills-container{

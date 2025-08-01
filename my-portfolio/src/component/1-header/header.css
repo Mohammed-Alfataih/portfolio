@@ -60,7 +60,7 @@
 @media (max-width: 399px) {
   /* styles here */
   .navbar{
-    width: 400px;
+    width: 375px;
   }
   .nav-links {
   display: flex;

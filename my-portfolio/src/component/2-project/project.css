@@ -209,20 +209,30 @@ h1{
     gap: 10px;
 }
     */
-
+@media (max-width: 376px) {
+.projects{
+        display: flex;
+        flex-wrap: wrap;
+        flex-shrink: 50px;
+         width: 90%;
+        height: 100%;
+        margin-top: 0%;
+  }
+  
+}
 
 @media (max-width: 480px) {
 
     #project-container{
         margin-top: 00px;
-        margin-bottom: 200px;
+        margin-bottom: 300px;
     }
     .projects{
         display: flex;
         flex-wrap: wrap;
         flex-shrink: 50px;
          width: 90%;
-        height: 70%;
+        height: 80%;
         margin-top: 0%;
         
         
