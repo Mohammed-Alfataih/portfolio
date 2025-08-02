@@ -32,6 +32,7 @@ export default  function Contact(props) {
 
     return( 
        <div className="contact">
+        
         <div className="contact-Icon"><a href={props.link} >{props.icon}</a></div>
         <div className="link"><a href={props.link} >{props.name}</a></div> 
 
