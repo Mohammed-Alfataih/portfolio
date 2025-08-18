@@ -40,7 +40,7 @@ export default  function Main() {
       <div className="three">
       </div>
       </div>
-          <img src="mem.png" alt="hero" />
+          <img src="image-modified.png" alt="hero" />
           <div className="parttwo"> 
             <h1>About Me</h1>
         <p >

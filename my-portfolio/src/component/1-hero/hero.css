@@ -129,7 +129,9 @@ width: 100px;
 }
 /* Mobile (≤ 480px) */
 @media (max-width: 480px) {
-  
+   .two {
+    margin-top: 50px;
+   }
   .PartOne {
     grid-template-columns: 1fr;
     grid-template-rows: auto;

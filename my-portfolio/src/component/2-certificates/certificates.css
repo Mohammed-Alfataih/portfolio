@@ -143,7 +143,15 @@ border-radius: 8px;
    
 }
 
+@media (min-width: 769px) and (max-width: 860px) {
+   #certificates-container{
+    margin-top: 10px;
+    #topic-certificates{
+ margin-top: 100px;
+    }
+  }
 
+}
 @media (min-width: 769px) and (max-width: 1629px) {
 
   #certificates-container{
@@ -160,6 +168,9 @@ border-radius: 8px;
 
 
 @media (max-width: 768px) {
+  #certificates-container{
+    margin-top: 50px;
+  }
   .top img {
     margin-top: 10px;
     
