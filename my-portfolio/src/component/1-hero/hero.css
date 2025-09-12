@@ -128,42 +128,49 @@ width: 100px;
 
 }
 /* Mobile (≤ 480px) */
-@media (max-width: 480px) {
-   .two {
+@media (max-width: 430px) {
+  .two {
     margin-top: 50px;
-   }
+  }
+
   .PartOne {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     height: auto;
     padding: 1.5rem;
-    img {
+  }
+
+  .PartOne img {
     width: 80%;
-    height: 90%;
+    height: auto; /* use auto so the image doesn’t stretch weirdly */
     margin-top: 5px;
-    
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* centers the image */
   }
+
+  .name {
+    font-size: 2rem;
   }
-  .name{
-    font-size: 2.0rem;
-  }
+
   .parttwo {
-    width: 110%;
-    height: 30%;
+    width: 100%;   /* avoid overflow on small screens */
     font-size: 0.8rem;
-    p{
-      font-size: small;
-    }
-    
-    
+    margin-top: 20px;
+    padding: 1rem;
   }
+
+  .parttwo p {
+    font-size: small;
+  }
+
   .next-to-img {
     margin-top: 10px;
-    margin-left: 30px;
-   
+    margin-left: 0; /* reset margin so text isn’t pushed off-screen */
+    text-align: center;
   }
-  
 }
+
 
 
 
