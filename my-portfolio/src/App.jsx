@@ -99,8 +99,8 @@ Studied core areas like programming, databases, networks, and cybersecurity with
    <div id="project-container">
                          <h1 id="topic-project">Future projects</h1>
   <data className="projects"> 
-  <Project img="statistics.png"    title="ChartMaker"   description="Build professional charts and visualizations from your data with drag-and-drop simplicity."       tool={["Html", "Java","React.js"]}    />
-  <Project img="water-bottle.png"    title="HydroTrack"   description="Track your daily water intake and stay hydrated with smart reminders and progress monitoring."    tool={["Html", "Css","Java","React.js"]}      />
+  <Project img="TenziesGame.jpg"    title="Tenzies Game"   description="Roll until all dice are the same. Click each die to freeze it at its current value between rolls."       tool={["Html", "Java","React.js"]}  Visit="https://mohammed-alfataih.github.io/TenziesGame" Github="https://github.com/Mohammed-Alfataih/TenziesGame" />
+  <Project img="water-bottle.png"    title="HydroTrack"   description="Track your daily water intake and stay hydrated with smart reminders and progress monitoring."    tool={["Html", "Css","Java","React.js"]}  Visit=""    />
   <Project img="fitness.png"    title="MyFitness"   description="Track your workouts, monitor your heart rate, and stay on top of your fitness goals all in one place."             tool={["Html", "Css","Java"]}  />
   
   </data>
