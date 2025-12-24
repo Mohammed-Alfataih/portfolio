@@ -97,11 +97,11 @@ Studied core areas like programming, databases, networks, and cybersecurity with
   </div>
    </div>
    <div id="project-container">
-                         <h1 id="topic-project">Future projects</h1>
+                         <h1 id="topic-project">Projects</h1>
   <data className="projects"> 
-  <Project img="TenziesGame.jpg"    title="Tenzies Game"   description="Roll until all dice are the same. Click each die to freeze it at its current value between rolls."       tool={["Html", "Java","React.js"]}  Visit="https://mohammed-alfataih.github.io/TenziesGame" Github="https://github.com/Mohammed-Alfataih/TenziesGame" />
-  <Project img="water-bottle.png"    title="HydroTrack"   description="Track your daily water intake and stay hydrated with smart reminders and progress monitoring."    tool={["Html", "Css","Java","React.js"]}  Visit=""    />
-  <Project img="fitness.png"    title="MyFitness"   description="Track your workouts, monitor your heart rate, and stay on top of your fitness goals all in one place."             tool={["Html", "Css","Java"]}  />
+  <Project img="tenziess-re.png"    title="Tenzies Game"   description="Roll until all dice are the same. Click each die to freeze it at its current value between rolls."       tool={["Html", "Java","React.js"]}  Visit="https://mohammed-alfataih.github.io/TenziesGame" Github="https://github.com/Mohammed-Alfataih/TenziesGame" />
+  <Project img="Hangman.jpg"    title="Hangman"   description="classic word-guessing game The goal is to guess the hidden word by suggesting letters before running out of attempts."    tool={["Html", "Css","Java","React.js"]}  Visit="https://mohammed-alfataih.github.io/Hangman/"  Github="https://github.com/Mohammed-Alfataih/Hangman"  />
+
   
   </data>
   </div>
