@@ -172,12 +172,12 @@ h1{
  
 
 
-
+/*
 .project:hover{
     opacity: 1;
   transform: scale(1.1);
 }
-
+*/
 
 .used {
   display: flex;
@@ -193,7 +193,7 @@ h1{
   color: #d1d3da;
   font-size: 14px;
   border: 1px solid #35427a;
-  border-radius: 9999px; /* Full pill shape */
+  border-radius: 9999px; 
   font-weight: 500;
   white-space: nowrap;
   transition: 0.3s;
@@ -201,14 +201,7 @@ h1{
 
 
 
-/*
-.used{
-   
-    display: flex;
-  background-color: rgb(156, 184, 184);
-    gap: 10px;
-}
-    */
+
 @media (max-width: 376px) {
 .projects{
         display: flex;
